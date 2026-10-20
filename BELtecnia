@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEL TECNIA - Servicios Técnicos Profesionales</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Montserrat', sans-serif; background-color: #0b0b0b; color: #ffffff; line-height: 1.6; padding: 20px; }
+        .container { max-width: 1000px; margin: 0 auto; border-top: 5px solid #dfa71d; border-bottom: 5px solid #dfa71d; padding: 40px 20px; background-color: #0f0f0f; }
+        header { text-align: center; margin-bottom: 40px; }
+        .logo-title { font-size: 3rem; font-weight: 700; letter-spacing: 4px; color: #ffffff; }
+        .logo-subtitle { font-size: 1.1rem; color: #dfa71d; letter-spacing: 6px; margin-top: -5px; text-transform: uppercase; }
+        .hero-symbol { font-size: 3.5rem; color: #dfa71d; margin: 20px 0; font-weight: 300; }
+        .slogan { font-size: 1rem; letter-spacing: 2px; color: #cccccc; text-transform: uppercase; margin-bottom: 10px; }
+        .location { font-size: 0.9rem; letter-spacing: 1px; color: #888888; font-weight: 600; }
+        .welcome-box { border: 1px solid #dfa71d; padding: 25px; margin: 30px auto; max-width: 800px; text-align: justify; background-color: #141414; }
+        .welcome-box p { font-size: 0.95rem; color: #dddddd; }
+        .social-section { text-align: center; margin: 40px 0; }
+        .social-title { font-size: 1.1rem; color: #dfa71d; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
+        .social-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .btn-social { display: inline-flex; align-items: center; justify-content: center; padding: 12px 25px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; text-decoration: none; letter-spacing: 1px; transition: all 0.3s ease; min-width: 160px; }
+        .btn-whatsapp { background-color: #25D366; color: white; }
+        .btn-instagram { background-color: #E1306C; color: white; }
+        .btn-tiktok { background-color: #000000; color: white; border: 1px solid #ffffff; }
+        .btn-facebook { background-color: #1877F2; color: white; }
+        .btn-social:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(223, 167, 29, 0.2); opacity: 0.9; }
+        .policy-banner { background-color: #dfa71d; color: #000000; display: flex; justify-content: space-between; align-items: center; padding: 15px 25px; font-weight: 700; margin: 30px auto; max-width: 800px; letter-spacing: 1px; font-size: 1rem; }
+        .policy-text { max-width: 800px; margin: 0 auto 30px auto; text-align: justify; font-size: 0.9rem; color: #cccccc; }
+        .services-column { margin-top: 40px; }
+        .category-title { padding: 10px; font-size: 1rem; font-weight: 700; letter-spacing: 1px; margin-bottom: 25px; text-transform: uppercase; }
+        .category-title.refri { background-color: #dfa71d; color: #000000; }
+        .category-title.elec { background-color: #e5e5e5; color: #000000; }
+        .service-item { margin-bottom: 25px; border-bottom: 1px dashed #333333; padding-bottom: 15px; }
+        .service-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 5px; }
+        .service-name { font-weight: 700; font-size: 0.95rem; color: #ffffff; letter-spacing: 0.5px; text-transform: uppercase; }
+        .service-price { font-weight: 700; color: #ffffff; font-size: 0.95rem; white-space: nowrap; padding-left: 10px; }
+        .service-desc { font-size: 0.85rem; color: #aaaaaa; font-weight: 300; }
+        .commercial-note { background-color: #141414; padding: 20px; margin-top: 40px; border-left: 3px solid #dfa71d; }
+        .commercial-note h4 { color: #dfa71d; font-size: 0.9rem; letter-spacing: 1px; margin-bottom: 5px; }
+        .commercial-note p { font-size: 0.85rem; color: #bbbbbb; }
+        .appointment-notice { text-align: center; color: #dfa71d; font-weight: 700; letter-spacing: 2px; margin: 40px 0; font-size: 1.1rem; }
+        .coming-soon-banner { border: 1px dashed #dfa71d; padding: 20px; text-align: center; margin-top: 40px; background: linear-gradient(180deg, #0f0f0f 0%, #17140b 100%); }
+        .coming-soon-banner p { color: #dfa71d; font-weight: 600; letter-spacing: 3px; font-size: 0.95rem; text-transform: uppercase; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { opacity: 0.6; } 50% { opacity: 1; } 100% { opacity: 0.6; } }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 class="logo-title">BEL</h1>
+            <h2 class="logo-subtitle">Tecnia</h2>
+            <div class="hero-symbol">~ A ~</div>
+            <p class="slogan">Acompañándote en tu vida</p>
+            <p class="location">Servicios Técnicos Profesionales en Guatemala</p>
+        </header>
+
+        <div class="welcome-box">
+            <p>Bienvenido a <strong>BEL TECNIA</strong>. Nos enorgullece presentar nuestro catálogo oficial de servicios de mano de obra calificada. Nos caracterizamos por brindar soluciones técnicas residenciales confiables, puntuales y ejecutadas por un equipo de profesionales uniformados. Nuestra metodología de trabajo mediante citas previas asegura una atención organizada, eficiente y adaptada a su disponibilidad horaria. Su tranquilidad y la seguridad de sus instalaciones son nuestro principal compromiso.</p>
+        </div>
+
+        <section class="social-section">
+            <h3 class="social-title">Nuestros Canales Oficiales</h3>
+            <div class="social-buttons">
+                <!-- Enlace de WhatsApp corregido con tu nuevo número -->
+                <a href="https://wa.me." class="btn-social btn-whatsapp" target="_blank">WhatsApp</a>
+                <a href="https://instagram.com" class="btn-social btn-instagram" target="_blank">Instagram</a>
+                <a href="https://tiktok.com" class="btn-social btn-tiktok" target="_blank">TikTok</a>
+                <a href="https://facebook.com" class="btn-social btn-facebook" target="_blank">Facebook</a>
+            </div>
+        </section>
+
+        <div class="policy-banner">
+            <span>POLÍTICA DE VISITA TÉCNICA</span>
+            <span>Q150.00</span>
+        </div>
+        <p class="policy-text">Nuestros técnicos calificados acudirán a su domicilio para realizar un diagnóstico exhaustivo utilizando herramientas profesionales de medición y precisión. <strong>Beneficio especial:</strong> si usted aprueba la reparación o el servicio técnico en el mismo momento de la evaluación, los Q150.00 se abonarán íntegramente al total de la mano de obra; de esta forma, el diagnóstico no tendrá un costo adicional.</p>
+
+        <p class="appointment-notice">ATENCIÓN EXCLUSIVAMENTE CON CITA PREVIA</p>
+
+        <div class="services-column">
+            <h3 class="category-title refri">🎛️ Refrigeración y Climatización</h3>
+            <div class="service-item"><div class="service-header"><span class="service-name">Mantenimiento Preventivo</span><span class="service-price">Q300.00</span></div><p class="service-desc">Limpieza de serpentines, verificación de presiones de gas y amperaje del motor.</p></div>
+            <div class="service-item"><div class="service-header"><span class="service-name">Mantenimiento Correctivo</span><span class="service-price">Q400.00</span></div><p class="service-desc">Diagnóstico del sistema automático de descongelamiento y sustitución de sensores.</p></div>
+            <div class="service-item"><div class="service-header"><span class="service-name">Reparación de Fuga Externa</span><span class="service-price">Q400.00</span></div><p class="service-desc">Localización de fisuras en tuberías expuestas, soldadura de plata y vacío con bomba.</p></div>
+            <div class="service-item"><div class="service-header"><span class="service-name">Reparación de Fuga Interna</span><span class="service-price">Q600.00</span></div><p class="service-desc">Detección estructural de fugas empotradas, aislamiento de líneas dañadas y bypass.</p></div>
+            <div class="service-item"><div class="service-header"><span class="service-name">Limpieza del Sistema</span><span class="service-price">Q350.00</span></div><p class="service-desc">Barrido interno de alta presión utilizando gas nitrógeno para erradicar humedad.</p></div>
+            <div class="service-item"><div class="service-header"><span class="service-name">Cambio de Compresor</span><span class="service-price">Q700.00</span></div><p class="service-desc">Sustitución de unidad motora, soldadura de acoples, reemplazo de filtro y vacío.</p></div>
+            <div class="service-item"><div class="service-header"><span class="service-name">Cambio de Termostato</span><span class="service-price">Q175.00</span></div><p class="service-desc">Sustitución y calibración de controles mecánicos o sensores lógicos.</p></div>
+            <div class="service-item"><div class="service-header"><span class="service-name">Reemplazo de Ventilador</span><span class="service-price">Q200.00</span></div><p class="service-desc">Instalación del motor forzador de aire dentro del evaporador y balanceo.</p></div>
